@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(45, 13, 160);
+}
+h1 {
+  color: crimson;
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(3, 3, 3, 0);
+  padding: 20px 0;
+  overflow: hidden;
+  width: 400px;
+  margin: auto;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 1.5s ease;
+  border-radius: 0 3px 3px 0;
+  opacity: 1.05;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 1;
+}
+
+.next {
+  right: -50px;
+}
+.prev {
+  left: -50px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
